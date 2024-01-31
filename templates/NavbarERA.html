@@ -31,12 +31,7 @@
         gap: 20px;
     }
 
-    body{
-        background-color: #F5F5F5;
-        height: 500vh;
-    }
-
-    .ButtonProfile {
+    .ButtonProfile{
         padding-top: 17px;
         padding-bottom: 17px;
         padding-left: 40px;
@@ -56,39 +51,31 @@
                     <a class="  text-decoration-none font-weight-normal text-dark" href="home.html">Beranda</a>
                 </div>
                 <div class="ml-2">
-                    <div class="">
-                        <button
-                          class="bg-white border-0 dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton"
-                          data-mdb-dropdown-init
-                          data-mdb-ripple-init
-                          aria-expanded="false"
-                        >
-                          Services
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Rekomendasi Pemanfaatan Limbah Elektronik</a></li>
-                          <li><a class="dropdown-item" href="#">Penjemputan Limbah Elektronik</a></li>
-                          <li><a class="dropdown-item" href="#">Artikel</a></li>
+                    <div class="dropdown ">
+                        <a class=" text-decoration-none font-weight-normal text-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
+                            Services
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="h5 dropdown-item" href="#">Rekomendasi Pemanfaatan Limbah Elektronik</a></li>
+                            <li><a class="h5 dropdown-item" href="#">Penjemputan Limbah Elektronik</a></li>
+                            <li><a class="h5 dropdown-item" href="#">Artikel</a></li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
                 <div class="ml-2">
                     <a class="text-decoration-none font-weight-normal text-dark" href="">Bantuan</a>
                 </div>
+                
             </div>
-
             <div class="ml-4 d-flex ButtonProfile flex-row justify-content-between align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle"
-                    viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
                 <p class="h5 text-white ml-2 mb-0">Profile</p>
             </div>
-        </div>
         </div>
     </nav>
 </body>
