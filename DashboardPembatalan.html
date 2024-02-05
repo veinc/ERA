@@ -124,19 +124,19 @@
     </div>
     <div class="w-100 d-flex justify-content-center mt-5">
         <div class="d-flex w-75 justify-content-between flex-row">
-            <div class="shadow d-flex flex-column align-items-center justify-content-center w-20 WarnaHijau rounded-xl">
-                <p class="text-white">Dalam Antrean</p>
-                <h2 class="text-white">0</h2>
+            <div class="shadow DalamAntrean d-flex flex-column align-items-center justify-content-center w-20 rounded-xl">
+                <p>Dalam Antrean</p>
+                <h2>0</h2>
             </div>
-            <div class="shadow d-flex flex-column align-items-center justify-content-center w-20 WarnaHijau rounded-xl">
-                <p class="text-white">Dalam Proses</p>
-                <h2 class="text-white">0</h2>
+            <div class="shadow DalamProses d-flex flex-column align-items-center justify-content-center w-20 rounded-xl">
+                <p>Dalam Proses</p>
+                <h2>0</h2>
             </div>
-            <div class="shadow d-flex flex-column align-items-center justify-content-center w-20 WarnaHijau rounded-xl">
-                <p class="text-white">Selesai</p>
-                <h2 class="text-white">0</h2>
+            <div class="shadow Selesai d-flex flex-column align-items-center justify-content-center w-20 rounded-xl">
+                <p>Selesai</p>
+                <h2>0</h2>
             </div>
-            <div class="shadow d-flex flex-column align-items-center justify-content-center w-20 WarnaHijau rounded-xl">
+            <div class="shadow Pembatalan d-flex flex-column align-items-center justify-content-center w-20 bg-danger rounded-xl">
                 <p class="text-white">Pembatalan</p>
                 <h2 class="text-white">0</h2>
             </div>
@@ -154,7 +154,7 @@
                     <h5>Diantar / Jemput</h5>
                 </div>
             </div>
-            <p class="text-success mr-3 h-100 mt-7">Dalam Antrean</p>
+            <p class="text-danger mr-3 h-100 mt-7">Dibatalkan</p>
         </div>
 
         <div class="p-3 mt-4 w-75 d-flex justify-content-between align-items-center shadow rounded-xl">
@@ -167,7 +167,7 @@
                     <h5>Diantar / Jemput</h5>
                 </div>
             </div>
-            <p class="text-success mr-3 h-100 mt-7">Dalam Antrean</p>
+            <p class="text-danger mr-3 h-100 mt-7">Dibatalkan</p>
         </div>
     </div>
 
@@ -184,5 +184,23 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 <!-- AKHIR JS NAVBAR -->
+<script>
+    var DalamProses = document.querySelector('.DalamProses');
+    var DalamAntrean = document.querySelector('.DalamAntrean');
+    var Selesai = document.querySelector('.Selesai');
+    var Pembatalan = document.querySelector('.Pembatalan');
 
+    DalamProses.addEventListener('click', function () {
+        window.location.href = 'DashboardDalamProses.html';
+    });
+    DalamAntrean.addEventListener('click', function () {
+        window.location.href = 'DashboardDalamAntrean.html';
+    });
+    Selesai.addEventListener('click', function () {
+        window.location.href = 'DashboardSelesai.html';
+    });
+    Pembatalan.addEventListener('click', function () {
+        window.location.href = 'DashboardPembatalan.html';
+    });
+</script>
 </html>
